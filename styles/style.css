@@ -1,0 +1,18 @@
+/*Blocks*/
+@import "blocks/block-donation.css";
+@import "blocks/block-game-info.css";
+@import "blocks/block-stages.css";
+@import "blocks/block-members.css";
+
+/*fonts*/
+@import "fonts/icon-fonts.css";
+
+/*Shared*/
+@import "shared/general.css";
+@import "shared/ui.css";
+
+/*widgets*/
+@import "widgets/running-line.css";
+@import "widgets/header.css";
+@import "widgets/footer.css";
+

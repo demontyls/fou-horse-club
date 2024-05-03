@@ -1,0 +1,12 @@
+.information-text {
+  font-size: 16px;
+  line-height: 19.2px;
+  background: var(--ash-gray);
+  padding: 40px 72px;
+}
+
+@media (max-width: 768px) {
+  .information-text {
+    padding: 40px 20px;
+  }
+}

@@ -1,0 +1,93 @@
+.block-game-info {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 120px;
+}
+
+.block-game-info__list-info {
+  margin-block: 0 32px;
+  padding: 0;
+}
+
+.block-game-info__list-info li {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 20px;
+  line-height: 24px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.block-game-info__header {
+  font-size: 36px;
+  line-height: 48.6px;
+}
+
+.block-game-info__list-info li:last-child {
+  border: none;
+}
+
+.block-game-info__list-info__label {
+  padding-block: 16px;
+  color: rgba(var(--dark-rbd), 7);
+}
+
+.block-game-info__img {
+  flex-shrink: 0;
+  width: 528px;
+  height: 609px;
+  margin-left: -28px;
+  margin-top: -28px;
+}
+
+.block-game-info__img img {
+  width: 100%;
+  object-fit: cover;
+  /*height: 100%;*/
+}
+
+.block-game-info__list-info__content {
+  padding: 16px;
+  color: var(--dark);
+  font-weight: 500;
+  border-left: 2px solid var(--border-color);
+}
+
+@media (max-width: 1046px) {
+  .block-game-info {
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .block-game-info__list-info li {
+    grid-template-columns: 1fr;
+  }
+
+  .block-game-info__list-info__label {
+    padding-bottom: 12px;
+  }
+
+  .block-game-info__list-info__content {
+    border-left: none;
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  .block-game-info__list-info {
+    margin-bottom: 24px;
+  }
+
+  .block-game-info__img {
+    flex-shrink: 0;
+    width: min(100dvh, 350px);
+    height: 420px;
+    margin-inline: -20px;
+    margin-top: 0;
+  }
+
+  .block-game-info__header {
+    font-size: 28px;
+    line-height: 37.8px;
+  }
+}

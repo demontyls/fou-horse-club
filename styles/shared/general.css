@@ -1,0 +1,50 @@
+:root {
+  --red: #F54932;
+  --black: #1F1F1F;
+  --dark: #313131;
+  --semi-darck: #595653;
+  --info: #3057A2;
+  --ash-gray: #E9DED4;
+  --white: #fff;
+  --yellow: #FBCE51;
+  --border-color: #D0D0D0;
+  --gray: #D9D9D9;
+  --disabled: #D6D6D6;
+  --dark-rbd: 31,31,31;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Golos Text", sans-serif;
+  margin: 0;
+  font-weight: 300; /* as 400 */
+}
+
+:is(h1,h2,h3,h4,h5,h6) {
+  font-family: "Merriweather", serif;
+  font-weight: 300; /* as 400 */
+  text-transform: uppercase;
+  color: var(--dark);
+  margin: 0;
+}
+
+main {
+  padding: 100px 72px 0 72px;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 48px 20px 0 20px;
+  }
+}

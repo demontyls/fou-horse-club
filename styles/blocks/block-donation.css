@@ -1,0 +1,43 @@
+.block-donation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.block-donation__text-wrapper {
+  max-width: 764px;
+}
+
+.block-donation h2 {
+  display: inline;
+  font-size: 36px;
+  line-height: 48.6px;
+}
+
+@media (max-width: 960px) {
+  .block-donation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 34px;
+  }
+
+  .block-donation h2 {
+    font-size: 28px;
+    line-height: 47.8px;
+  }
+
+  .block-donation img {
+    width: min(calc(100dvw - 56px), 335px);
+    margin-block: 24px;
+  }
+
+  .block-donation__transfer-text {
+    order: 2;
+  }
+
+  .block-donation__text-wrapper {
+    display: contents;
+  }
+}

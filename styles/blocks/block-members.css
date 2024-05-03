@@ -1,0 +1,138 @@
+.block-members {
+  margin-bottom: 140px;
+}
+
+.block-members__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.block-members__header h2 {
+  font-size: 54px;
+  line-height: 54.8px;
+}
+
+.block-members__header__control,
+.block-members__footer__control {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.block-members__footer__control {
+  display: none;
+  justify-content: center;
+}
+
+.slider-wrapper {
+  max-width: calc(394px * 3);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.block-members__cards-wrapper {
+  display: flex;
+  transition: 500ms;
+}
+
+.block-members__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 36px 52px;
+}
+
+.block-members__card__avatar {
+  width: 320px;
+  height: 320px;
+  background: url("/img/avatar.png");
+  background-size: cover;
+  margin-bottom: 28px;
+}
+
+.block-members__card__fullname {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.8px;
+  margin-bottom: 6px;
+}
+
+.block-members__card__desc {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(var(--dark-rbd), .6);
+  margin-bottom: 20px;
+}
+
+.members__count {
+  font-size: 16px;
+  line-height: 19.2px;
+  color: rgba(var(--dark-rbd), .6);
+}
+
+.members__count--current {
+  color: var(--dark);
+}
+
+@media (max-width: 1332px) {
+  .slider-wrapper {
+    max-width: calc((244px + 88px) * 3);
+  }
+
+  .block-members__card {
+    padding-inline: 24px;
+    max-width: 335px;
+    width: 100%;
+    flex-shrink: 0;
+  }
+
+  .block-members__card__avatar {
+    width: 244px;
+    height: 244px;
+  }
+}
+
+@media (max-width: 1124px) {
+  .slider-wrapper {
+    max-width: calc((244px + 88px) * 2);
+  }
+}
+
+@media (max-width: 768px) {
+  .block-members {
+    margin-bottom: 100px;
+  }
+
+  .slider-wrapper {
+    max-width: calc((244px + 88px) * 1);
+    margin-bottom: 40px;
+  }
+
+  .block-members__header {
+    margin-bottom: 40px;
+  }
+
+  .block-members__header h2 {
+    font-size: 36px;
+    line-height: 39.6px;
+  }
+
+  .block-members__header__control {
+    display: none;
+  }
+
+  .block-members__footer__control {
+    display: flex;
+  }
+
+  .block-members__card__fullname {
+    font-size: 22px;
+  }
+
+  .block-members__card__desc {
+    font-size: 18px;
+  }
+}
