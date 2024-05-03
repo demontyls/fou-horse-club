@@ -47,7 +47,7 @@
 .block-members__card__avatar {
   width: 320px;
   height: 320px;
-  background: url("/img/avatar.png");
+  background: url("../../img/avatar.png");
   background-size: cover;
   margin-bottom: 28px;
 }

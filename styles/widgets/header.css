@@ -1,6 +1,6 @@
 .header {
   padding: 24px 72px;
-  background: url("/img/baner.png") no-repeat center;
+  background: url("../../img/baner.png") no-repeat center;
   background-size: contain;
   height: max(calc(700px -  48px), calc(100dvh - 48px));
 }
@@ -86,7 +86,7 @@
 
 @media (max-width: 375px) {
   .header {
-    background: url("/img/baner-small.png");
+    background: url("../../img/baner-small.png");
     height: calc(812px - 36px);
   }
 
